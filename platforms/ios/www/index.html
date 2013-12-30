@@ -1,43 +1,1150 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <title></title>
+  
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css">
+
+    <link rel="stylesheet" href="css/gs.css">
+  
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="home">
+    <div>
+        <div>
+            <img class="gb-img" src="img/RayJohnson.png" alt="image"/>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+        <div class="gb-name">
+            Ray Johnson
+        </div>
+        <div class="gb-job">
+            Senior Vice-President and Chief Technology Officer, Lockheed Martin Corporation
+        </div>
+
+        <div id="news" class="hlist">
+            
+        </div>
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top" class="bar-style">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Articles -->
+<div data-role="page" id="articles">
+    <div class="page-title">
+        <span class="title">Articles</span>
+    </div>
+    <ul id="articleList" data-role="listview" data-divider-theme="b" class="list">
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a8" data-transition="slide">
+                <div class="source">Diversity Best Practices</div><div class="ar-date">Dec 02, 2013</div><br/>
+                <div class="ar-title">Lockheed Martin Recognized for Minority Business Development Award</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a3" data-transition="slide">
+                <div class="source">Executive Biz</div><div class="ar-date">May 30, 2013</div><br/>
+                <div class="ar-title">Excutive Spotlight Dr.Ray O.Johnson, Lockheed SVP & CTO on STEM Education and Federal Tech Procurement</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a2" data-transition="slide">
+                <div class="source">The Globe and Mail</div><div class="ar-date">Apr 05, 2013</div><br/>
+                <div class="ar-title">B.C. firm’s superfast quantum computer upgrade attracts Lockheed Martin</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a1" data-transition="slide">
+                <div class="source">The New York Times</div><div class="ar-date">Mar 21, 2013</div><br/>
+                <div class="ar-title">A Strange Computer Promises Great Speed</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a5" data-transition="slide">
+                <div class="source">Aviation Week</div><div class="ar-date">Mar 04, 2013</div><br/>
+                <div class="ar-title">Industry Using Prize Challenges To Stimulate Innovation</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a11" data-transition="slide">
+                <div class="source">Gov Con Exec</div><div class="ar-date">Jan 14, 2013</div><br/>
+                <div class="ar-title">New Washington 100 Inductee Ray O.Johnson, Lockheed Martin SVP & CTO</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a7" data-transition="slide">
+                <div class="source">Lockheed Martin </div><div class="ar-date">Aug 6, 2012</div><br/>
+                <div class="ar-title">Lockheed Martin Launches Innovation Contest</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a6" data-transition="slide">
+                <div class="source">Washington Exec</div><div class="ar-date">Dec 13, 2011</div><br/>
+                <div class="ar-title">Lockheed Martin CTO Ray Johnson 2012 Outlook New Global Security Challenges, “New Reality”</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a4" data-transition="slide">
+                <div class="source">The Ecomomic Times</div><div class="ar-date">Jul 02, 2010</div><br/>
+                <div class="ar-title">Good ideas come from everyplace Ray Johnson, Lockheed Martin</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a9" data-transition="slide">
+                <div class="source">arcsfoundation.org</div><br/>
+                <div class="ar-title">Lockheed Martin University Collaboration Spotlighted On Capitol Hill</div>
+            </a>
+        </li>
+        <li data-theme="c" class="ar-bullet">
+            <a href="#a10" data-transition="slide">
+                <div class="source">forloveandhonor.org</div><br/>
+                <div class="ar-title">Miami and Lockheed Martin Launch Visionary Leadership Institute</div>
+            </a>
+        </li>
+    </ul>
+    
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--v1-->
+<div data-role="page" id="v1">
+    <a class="back arrow" href='#articles' data-transition="slide" onclick="stopCurrentVideo();">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Cardinal Health's Chairman & CEO George Barrett on Board Leadership
+    </div>
+    <div class="a-body">
+        <video id="video1" style="width:300px" controls>
+            <source src="http://54.215.134.149:8080/file/getFile/g1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<!--a1-->
+<div data-role="page" id="a1">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Lockheed Martin Launches Innovation Contest
+    </div>
+    <div class="a-body">
+        <div>VANCOUVER, British Columbia — Our digital age is all about bits, those precise ones and zeros that are the stuff of modern computer code.</div>
+        <br>
+        <div>But a powerful new type of computer that is about to be commercially deployed by a major American military contractor is taking computing into the strange, subatomic realm of quantum mechanics. In that infinitesimal neighborhood, common sense logic no
+        longer seems to apply. A one can be a one, or it can be a one and a zero and everything in between — all at the same time.</div>
+        <br>
+        <div>It sounds preposterous, particularly to those familiar with the yes/no world of conventional computing. But academic researchers and scientists at companies like Microsoft, I.B.M. and Hewlett-Packard have been working to develop quantum computers.</div>
+        <br>
+        <div>Now, Lockheed Martin — which bought an early version of such a computer from the Canadian company D-Wave Systems two years ago — is confident enough in the technology to upgrade it to commercial scale, becoming the first company to use quantum computing
+        as part of its business.</div>
+        <br>
+        <div>Skeptics say that D-Wave has yet to prove to outside scientists that it has solved the myriad challenges involved in quantum computation.</div>
+        <br>
+        <div>But if it performs as Lockheed and D-Wave expect, the design could be used to supercharge even the most powerful systems, solving some science and business problems millions of times faster than can be done today.</div>
+        <br>
+        <div>Ray Johnson, Lockheed’s chief technical officer, said his company would use the quantum computer to create and test complex radar, space and aircraft systems. It could be possible, for example, to tell instantly how the millions of lines of software running
+        a network of satellites would react to a solar burst or a pulse from a nuclear explosion — something that can now take weeks, if ever, to determine.</div>
+        <br>
+        <div>“This is a revolution not unlike the early days of computing,” he said. “It is a transformation in the way computers are thought about.” Many others could find applications for D-Wave’s computers. Cancer researchers see a potential to move rapidly through
+        vast amounts of genetic data. The technology could also be used to determine the behavior of proteins encoded by the human genome, a bigger and tougher problem than sequencing the genome. Researchers at Google have worked with D-Wave on using quantum computers
+        to recognize cars and landmarks, a critical step in managing self-driving vehicles.</div>
+        <br>
+        <div>Quantum computing is so much faster than traditional computing because of the unusual properties of particles at the smallest level. Instead of the precision of ones and zeros that have been used to represent data since the earliest days of computers,
+        quantum computing relies on the fact that subatomic particles inhabit a range of states. Different relationships among the particles may coexist, as well. Those probable states can be narrowed to determine an optimal outcome among a near-infinitude of possibilities,
+        which allows certain types of problems to be solved rapidly.</div>
+        <br>
+        <div>D-Wave, a 12-year-old company based in Vancouver, has received investments from Jeff Bezos, the founder of Amazon.com, which operates one of the world’s largest computer systems, as well as from the investment bank Goldman Sachs and from In-Q-Tel, an investment
+        firm with close ties to the Central Intelligence Agency and other government agencies.</div>
+        <br>
+        <div>“What we’re doing is a parallel development to the kind of computing we’ve had for the past 70 years,” said Vern Brownell, D-Wave’s chief executive.</div>
+        <br>
+        <div>Mr. Brownell, who joined D-Wave in 2009, was until 2000 the chief technical officer at Goldman Sachs. “In those days, we had 50,000 servers just doing simulations” to figure out trading strategies, he said. “I’m sure there is a lot more than that now,
+        but we’ll be able to do that with one machine, for far less money.”</div>
+        <br>
+        <div>D-Wave, and the broader vision of quantum-supercharged computing, is not without its critics. Much of the criticism stems from D-Wave’s own claims in 2007, later withdrawn, that it would produce a commercial quantum computer within a year.</div>
+        <br>
+        <div>“There’s no reason quantum computing shouldn’t be possible, but people talked about heavier-than-air flight for a long time before the Wright brothers solved the problem,” said Scott Aaronson, a professor of computer science at the Massachusetts Institute
+        of Technology. D-Wave, he said, “has said things in the past that were just ridiculous, things that give you very little confidence.”</div>
+        <br>
+        <div>But others say people working in quantum computing are generally optimistic about breakthroughs to come. Quantum researchers “are taking a step out of the theoretical domain and into the applied,” said Peter Lee, the head of Microsoft’s research arm, which
+        has a team in Santa Barbara, Calif., pursuing its own quantum work. “There is a sense among top researchers that we’re all in a race.”</div>
+        <br>
+        <div>If Microsoft’s work pans out, he said, the millions of possible combinations of the proteins in a human gene could be worked out “fairly easily.”</div>
+        <br>
+        <div>Quantum computing has been a goal of researchers for more than three decades, but it has proved remarkably difficult to achieve. The idea has been to exploit a property of matter in a quantum state known as superposition, which makes it possible for the
+        basic elements of a quantum computer, known as qubits, to hold a vast array of values simultaneously.</div>
+        <br>
+        <div>There are a variety of ways scientists create the conditions needed to achieve superposition as well as a second quantum state known as entanglement, which are both necessary for quantum computing. Researchers have suspended ions in magnetic fields, trapped
+        photons or manipulated phosphorus atoms in silicon.</div>
+        <br>
+        <div>The D-Wave computer that Lockheed has bought uses a different mathematical approach than competing efforts. In the D-Wave system, a quantum computing processor, made from a lattice of tiny superconducting wires, is chilled close to absolute zero. It is
+        then programmed by loading a set of mathematical equations into the lattice.</div>
+        <br>
+        <div>The processor then moves through a near-infinity of possibilities to determine the lowest energy required to form those relationships. That state, seen as the optimal outcome, is the answer.</div>
+        <br>
+        <div>The approach, which is known as adiabatic quantum computing, has been shown to have promise in applications like calculating protein folding, and D-Wave’s designers said it could potentially be used to evaluate complicated financial strategies or vast
+        logistics problems.</div>
+        <br>
+        <div>However, the company’s scientists have not yet published scientific data showing that the system computes faster than today’s conventional binary computers. While similar subatomic properties are used by plants to turn sunlight into photosynthetic energy
+        in a few million-billionths of a second, critics of D-Wave’s method say it is not quantum computing at all, but a form of standard thermal behavior.</div>
+        <br>
+        <div class="gray-header">Published</div>
+        <div>Mar 21, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>By QUENTIN HARDY</div>
+        <div>http://www.nytimes.com/2013/03/22/technology/testing-a-new-class-of-speedy-computer.html?_r=0</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a2-->
+<div data-role="page" id="a2">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        B.C. firm’s superfast quantum computer upgrade attracts Lockheed Martin
+    </div>
+    <div class="a-body">
+        <div>When the world’s largest defence contractor reportedly paid $10-million for a superfast quantum computer, the Burnaby, B.C., company that built it earned a huge vote of confidence.</div>
+        <br>
+        <div>Two years after Lockheed Martin acquired the first commercially viable quantum computer from D-Wave Systems, the American aerospace and technology giant is once again throwing its weight behind a technology many thought was still the stuff of science fiction.</div>
+        <br>
+        <div>Lockheed Martin has just upgraded its D-Wave One quantum computer to the D-Wave Two, a machine the company’s founder Geordie Rose said is 500,000 times faster than its predecessor, which was already faster than a conventional computer.</div>
+        <br>
+        <div>“I don’t think we would have been able to succeed to the extent that we have without them,” Dr. Rose said of Lockheed Martin’s investment</div>
+        <br>
+        <div>Quantum computers operate at speeds unattainable by even today’s most powerful supercomputers, operations that are so fast they can process millions of calculations in a fraction of the months, even years, traditional computers take.</div>
+        <br>
+        <div>They can even be taught and can recognize objects in images, a task standard computers struggle with.</div>
+        <br>
+        <div>Ray Johnson, Lockheed’s chief technical officer, told The New York Times his company would use the highly advanced computer technology to create and test complex radar, space and aircraft systems.</div>
+        <br>
+        <div>Dr. Rose wouldn’t say how much Lockheed Martin paid for the computer, but several tech blogs said it was $10-million.</div>
+        <br>
+        <div>It is a big win for D-Wave, said Dr. Rose, who has battled skeptics who questioned the legitimacy of his quantum technology – a technology he noted no other company is working on today.</div>
+        <br>
+        <div>If the company continues on the same path, it will release a new, faster commercial processor every two years, said Dr. Rose who graduated from the University of British Columbia with a PhD in theoretical physics.</div>
+        <br>
+        <div>“It will be like the Wright brothers taking off,” he said. “There will be an entirely new thing that wasn’t possible before.”</div>
+        <br>
+        <div>D-Wave set up in Burnaby because the city was already home to all of its founders, Dr. Rose said, and when they looked to expand and considered other cities, the reasons to stay multiplied.</div>
+        <br>
+        <div>Dr. Rose said while he plans to keep D-Wave in Burnaby, he finds it annoying that Metro Vancouver, with all of its obvious positive attributes, doesn’t have more depth in the technology sector.</div>
+        <br>
+        <div>“Canada has a beautiful system of supporting researchers and the generation of immensely valuable ideas,”Dr. Rose said. “But taking the bull by the horns and making it into a $100-billion business just doesn’t happen.”</div>
+        <br>
+        <div class="gray-header">Published</div>
+        <div>Apr 05, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>The Canadian Press - VANCOUVER</div>
+        <div>http://www.theglobeandmail.com/news/british-columbia/bc-firms-superfast-quantum-computer-upgrade-attracts-lockheed-martin/article10825838/</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a3-->
+<div data-role="page" id="a3">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Executive Spotlight: Dr. Ray O. Johnson, Lockheed SVP &amp; CTO on STEM Education and Federal Tech Procurement
+    </div>
+    <div class="a-body">
+        <p>Dr. Ray O. Johnson serves as senior vice president and chief technology officer at Lockheed Martin, where he guides the corporation’s technology vision and provides corporate leadership in the strategic areas of technology, engineering, production operations
+        and program management.</p>
+        <p>The Air Force veteran previously served as SAIC’s SVP and general manager of the advanced concepts business unit.</p>
+        <p>In his conversation with ExecutiveBiz, Johnson discusses the importance of STEM education in building U.S. capabilities for the future, his expanded role as a result of a recent Lockheed reorganization and how he stays ahead of government acquisition.</p>
+        <p class="speaker">Q: How would you describe your role as chief technology officer at Lockheed Martin?</p>
+        <p class="answer">A: We recently went through a corporate staff reorganization that expanded my role beyond strategic leadership in the areas of technology and engineering to now also include production operations, program management, and supply chain operations.
+        Combined, that represents 72,000 people in the corporation in those positions, including 60,000 engineers, scientists, and technologists.</p>
+        <p class="speaker">Q: Are those individuals directly under your leadership?</p>
+        <p class="answer">A: Some are directly and some are indirectly. The corporation is organized into five major business areas. So, in addition to my headquarters staff who lead enterprise-wide initiatives, the senior technical person in each one of our five
+        business areas reports directly to me. That person then represents all of those engineers and scientists who work within that business area. We are using that same model for the production operations and program management functions. The senior production
+        operations person and the senior program management person within each business area also reports to me.</p>
+        <p class="speaker">Q: Why are STEM education program so important to the U.S.?</p>
+        <p class="answer">A: Science, technology, engineering, and math, and the associated innovation, have been the cornerstone of economic development in the United States since the beginning of our nation. As we look at the situation today, we have a generation
+        of scientists, engineers, and mathematicians who are getting ready to retire. You can think of this in large part as the Apollo generation.</p>
+        <p class="answer">During the space program, many people entered the field of engineering and science to support the Apollo program as part of our national security; those people are now retiring. So we are concerned about the number of young people who are
+        needed to replace these important technology positions.</p>
+        <p class="answer">To remain competitive, the United States needs to recognize that we are seeing a gap in the number of young people entering STEM fields. We want to inspire students to pursue these disciplines, which we know are critical not only to our
+        national security, but also to our economic strength and our global competitiveness.</p>
+        <p class="answer">We think that success in this area depends on collaboration among industry, educators, policy makers, and families. And as an industry leader, we’re committed to working with these constituencies to make sure that we raise the level of what
+        it means to be a scientist or an engineer—raise it to a level of celebrity similar to that of athletes or movie stars.</p>
+        <p class="answer">Lockheed Martin has been supporting STEM education in many ways—50 percent of our corporate giving goes to STEM education programs. That amounted to more than $13 million in 2012.</p>
+        <p class="answer">And, we have STEM outreach activities like “Engineers in the Classroom,” where our engineers go into the classroom, partnering with teachers, to give the kids hands-on experiences. We think hands-on experiences are very important as we transform
+        difficult mathematics, science, and engineering to something very practical and fun.</p>
+        <p class="answer">We have also been proud to support the U.S.A. Science and Engineering Festival, which has taken place twice in the nation’s capital—once on the Mall and once at the Washington Convention Center—where we were able to bring hundreds of thousands
+        of people into thousands of engaging demonstrations to let them experience what STEM really means in a hands-on sort of way.</p>
+        <p class="answer">I participated in both of those events, and it was wonderful to see the diversity of the crowds: girls in the pilot seat of a helicopter simulator, boys putting curious hands-on nanotechnology, and families of all backgrounds asking inquisitive
+        questions about green energy. These were wonderful events, and we will again be the host and founding sponsor of the spring 2014 event.</p>
+        <p class="speaker">Q: What do you believe the current federal budget environment’s impact will be on research and development? Where does R&amp;D go from here?</p>
+        <p class="answer">A: As you may know, we are celebrating our 100th year as a company, and a hundred years of innovation. During our centennial anniversary, we can think back at all the wonderful things that Lockheed Martin has been responsible for in the
+        development of systems.</p>
+        <p class="answer">We have used innovation to develop those systems, and we are going to use innovation to meet the challenges that we face today. We live in an environment that we call the New Reality, which we describe as an increasing set of global security
+        challenges operating within a constrained resource environment. We believe that innovation plays a major role in meeting these challenges.</p>
+        <p class="answer">As a result, we have implemented initiatives on the technology and engineering side to tackle affordability head-on and generate innovative solutions.</p>
+        <p class="answer">Some of those solutions involve advanced materials that can reduce the cost, size, weight, and power usage of systems. Others involve advanced manufacturing, where we use digital design from the design phase through the sustainment phase
+        to reduce costs. We are bringing all the engineering and advanced technology capabilities to bear on this affordability challenge, and working with our customers to meet their challenges.</p>
+        <p class="speaker">Q: How do you stay ahead of the curve of what the government wants to do with acquisition and procurement in technology?</p>
+        <p class="answer">We look ahead and we also look to the current. I think the key is to have a balanced portfolio. History has shown that in times of economic downturns or defense drawdowns, making investments in future technologies is important. So you cannot
+        give up on future investments. At the same time, there are near-term challenges that have to be met.</p>
+        <p class="answer">We believe strongly in that balanced portfolio approach. Some of the areas that we are making investments in for the future include mobility and cloud computing, recognizing that data and decisions are being extended through mobility and
+        that everyone wants to always be connected.</p>
+        <p class="answer">Closely related to that is cybersecurity. As mobility and cloud computing increase, the surface area of attack also increases. As the number of mobile devices increases, so do the pathways to the network. We have very large cybersecurity
+        initiatives to help make sure that the information on the networks is secure, that communications are secure.</p>
+        <p class="answer">We are trying to move beyond the current computing architecture into quantum science and quantum computing. We have purchased a computer from a company called D-Wave that has been installed at the University of Southern California where
+        we are researching the next generation of computing architectures.</p>
+        <p class="answer">Also, I mentioned advanced materials and nanotechnology. We are working with basic material structure that can change the way engineers do design. It can actually have fundamental changes in the engineer’s design manuals and it can affect
+        size, weight, and power, and also support new manufacturing methods. So those are some of the areas that we are working in.</p>
+        <p class="speaker">What are some lessons you learned in the Air Force that you bring with you today and use in your current executive role?</p>
+        <p class="answer">I think the main lessons that I brought out of the Air Force and have applied in my post-Air Force business life are the importance of leadership, the absolute importance of teamwork, and, finally, a mission focus.</p>
+        <p class="answer">The single most important thing that serving in the military teaches you is that the mission comes first. That mission focus is important because the missions that we support and the customers that we serve are absolutely vital to the nation’s
+        security. We take on some of the most important global security challenges that the world faces. Having that mission focus enables us to, as a team, to successfully meet those challenges.</p>
+        <p class="speaker">You’ve been on both the buying side and selling side of government contracting technology. Wow has industry changed since you first became involved in contracting?</p>
+        <p class="answer">What is important to have in the government-industry partnership is strong technical capability on both sides. When I was in the Air Force working in acquisition, I always tried to bring a strong technical component and technical understanding
+        to the table when I spoke with industry counterparts. That is what we strive for and want to achieve today.</p>
+        <p class="answer">The best partnerships can be achieved when both industry and government have a good understanding of the trade space and a good understanding of the environment they operate in. We continue to work to develop a strong industry partnership
+        to match that strong government partnership so we can have—especially in times of affordability challenges when tradeoffs have to be made—a good, solid business and technical understanding that will help us all make the right decisions and achieve the best
+        outcomes.</p>
+        <p class="speaker">With all the things on your plate, including speaking engagements, how do you maintain a healthy work/life balance?
+        </p>
+        <p class="answer">The term that most people entering the workforce today use is work/life integration and that is the way I look at it. With mobility and always being connected, the key is to love what you do.</p>
+        <p class="answer">I am fortunate to currently have and previously have had jobs that I love. So that balance occurs much more naturally. It is not an “either/or,” it is an integrated “both.” Again, technologies enable a better integration. Young people entering the workforce today are mission focused and want to do a good job, but they also want some flexibility when they do that job.</p>
+        <p class="answer">This is what I mean by work/life integration: you need to be home for an appointment at four o’clock, but you know that you’re going to be back online at seven o’clock to put in a couple of hours in the evening. That is the kind of integration
+        that I think people want to achieve, and that certainly is the kind of life/work or work/life integration that I have achieved.</p>
+        <p class="speaker">So moving forward in 2013 and beyond, what are you most excited about for Lockheed Martin?</p>
+        <p class="answer">I am excited about the opportunities that we face, given the new technologies, the advanced manufacturing, and the quality of the workforce. The people who are entering our workforce today come with a drive, motivation and understanding,
+        ability to communicate, and desire to work together as teams that I think the industry has not seen before.</p>
+        <p class="answer">Everything begins with people and talent. As the nation’s number one defense contractor, we bring together that extreme talent with advanced technologies, new manufacturing and digital technology together to meet the challenges that we face
+        in this new reality.</p>
+
+        <div class="gray-header">Published</div>
+        <div>May 30, 2013 </div>
+        <div class="gray-header">Sources</div>
+        <div>David J. Barton</div>
+        <div>http://blog.executivebiz.com/2013/05/executive-spotlight-dr-ray-o-johnson-lockheed-cto-on-stem-education-and-federal-tech-procurement/#sthash.nYPmQSe3.dpuf</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a4-->
+<div data-role="page" id="a4">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Good ideas come from everyplace: Ray Johnson, Lockheed Martin
+    </div>
+    <div class="a-body">
+        <div>To build a partnership with India, Lockheed Martin Corporation launched the India Innovation Growth Program two years ago. The objective was two-fold: The first being to increase mutual understanding between the people, government, industry and academia
+        in India with Lockheed and its partners and the second to help entrepreneurs with innovative ideas, guiding them to understand the nuances of making a sound business plan and generate revenues. Coming from a firm that has won acclaim for game-changing innovations
+        over the years, the programme demonstrates its long-term commitment to India and to the spirit of entrepreneurship. Lockheed Martin's chief technology officer Ray Johnson talks to ET on how he views innovation in India, Lockheed's innovation game-plan and
+        some of the game-changing innovations at the company. Excerpts:</div>
+        <br>
+        <div class="speaker">Q: How do you view innovation in India?</div>
+        <br>
+        <div class="answer">A: It is not only grassroots. We strongly believe that good ideas come from everyplace. We have seen people who have established businesses come in, professors from universities, people who just have an idea, some even not that sophisticated
+        in terms of education or technical background.</div>
+        <br>
+        <div class="answer">A: Some have strong ideas but don't have business training, the ability to make a good business plan. India's commitment to education, value for education, advanced scientific and technical education, it is important for people with this
+        training to have business experience so that the inventions, that is the creation of the ideas, can become an innovation and make a difference in the marketplace.</div>
+        <br>
+        <div class="answer">A: And I must say that many of the ideas not only have application in India and in other developing countries but also in many of the developed nations. For example we saw an enzyme that can be used to turn plastic into oil.</div>
+        <br>
+        <div class="speaker">Q: What is the system within Lockheed to fund innovations?</div>
+        <br>
+        <div class="answer">A: We have an internal research and development activity (IRAD) which enables us to take ideas and develop technical solutions in partnership with technical experts across the corporation. This apart, we have an organisation called Centre
+        for Innovation. This centre has a building in Virginia which is much more than a building. It is networked with all the capabilities across the corporation accessible here and we can conduct workshops, experiments and demonstrations.</div>
+        <br>
+        <div class="answer">It gives us a chance to take customer problems, our innovative solutions and then work with the customers to develop the concepts of operations that can lead to fielded systems. That's an example of how we think about the innovative process.
+        Its important to have the technical solution, but its also important to have the innovation process that turns the idea into a concept of operation.</div>
+        <br>
+        <div class="answer">The third component is an innovation contest inside the corporation. We collect ideas from across the corporation through a web-based process. The programme is called Innovate the Future. It gives us an opportunity to collect ideas from
+        our 70,000 technical people from the corporation and they have a chance to compete for funding and to take their ideas to the market place. They implement their ideas for our customers.</div>
+        <br>
+        <div class="gray-header">Published</div>
+        <div>Jul 2, 2010</div>
+        <div class="gray-header">Sources</div>
+        <div>Ravi Teja Sharma &amp; Arjun Kumar</div>
+        <div>http://articles.economictimes.indiatimes.com/2010-07-02/news/27572355_1_lockheed-martin-fund-innovations-business-plan</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a5-->
+<div data-role="page" id="a5">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Industry Using Prize Challenges To Stimulate Innovation
+    </div>
+    <div class="a-body">
+        <div>As budgets are cut and margins squeezed, and business becomes more competitive, industry is turning to challenges to seek diverse views on difficult problems. And the prize, for the companies, can be ideas, talent or visibility in key markets.</div>
+        <br>
+        <div>“Diversity of thought is key to innovation,” says Ray Johnson, Lockheed Martin senior vice president and chief technology officer. “The more different views you get on a problem, the more you can facilitate a culture of innovation.”</div>
+        <br>
+        <div>Increasingly, industry is using prize competitions to find ideas for innovations, and targets for investment. Lockheed ran an innovation challenge late last year, both globally and internally; Northrop Grumman stages a competition for students in the United
+        Arab Emirates; Raytheon runs an annual internal competition, and Sikorsky has launched an online challenge to identify potential entrepreneurial partners.</div>
+        <br>
+        <div>“When Sikorsky Innovations was founded three years ago, we sought to reach outside the organization for partnerships, to other organizations investing in R&amp;D and to young ventures doing cutting-edge work on a different growth curve,” says Laurence Vigeant-Langlois,
+        director of business development and business partnerships.</div>
+        <br>
+        <div>Sikorsky has made minority investments in several such entities. “But we wanted to go to an even earlier stage of development, to see if there was value in early identification and alignment with our needs,” she says. The goal was to identify and invest
+        in entrepreneurial ventures early, to tap into ideas, talent and markets.</div>
+        <br>
+        <div>Why a challenge? “There is a benefit, especially with entrepreneurs as they are deadline-driven,” says Jonathan Hartman, advanced concepts engineer at Sikorsky Innovations. “An online challenge is a time-based way to reach out to them, and a unique opportunity
+        to broadcast our needs to a wide audience.” Accustomed to business-plan competitions, “entrepreneurs understand challenges as a route to funding,” he says.</div>
+        <br>
+        <div>Targeted at entities with revenues less than $5 million, the Entrepreneurial Challenge offers a year of incubation support, technical and business mentoring and an investment evaluation as the prize. The first round was launched in February 2012 with five
+        questions seeking ideas in wireless sensing, signature control, software, energy storage and avionics cooling.</div>
+        <br>
+        <div>The first winner was Pankl Aerospace Innovations, a California-based company set up by Austrian automotive and aerospace manufacturer Pankl Racing Systems. Pankl's solution addressed the second challenge—adaptive signature control and active survivability—by
+        proposing a set of technologies packaged into a concept rotorcraft called Hero. “It was the complementary transformational technologies, not the product, that drew us,” Vigeant-Langlois says.</div>
+        <br>
+        <div>These include a lightweight, stretchable skin made of a fiber-reinforced, polyurethane-coated Lycra fabric, used by BMW in its Gina concept car. An alligator-inspired “wagging” tail allows faster turns, says Pankl Aerospace Systems CEO Sonya Zierhut. The
+        skin is covered with thin-film bendable displays for active camouflage and carbon-nanotube loudspeakers for active noise cancellation.</div>
+        <br>
+        <div>Sikorsky decided two other contestants also were worthy of incubation support: Ottawa-based Smart Rotor Systems, with a new pitch-link control technology; and inventor Drew Lambert, with a mobile network weather information concept.</div>
+        <br>
+        <div>“We are halfway through the incubation period with the winner and the others,” says Vigeant-Langlois. At the end of the year-long prize period, the ventures will be assessed by Sikorsky to see if they are ready to move to the next level of investment.
+        “We expect not all will lead to a formal relationship downstream,” she says.</div>
+        <br>
+        <div>Sikorsky believes the venture has been valuable to both sides. “The winner has used the visibility to leverage interest with the investment community and others,” says Hartman.</div>
+        <br>
+        <div>For the second round, Sikorsky adapted the challenge “not only to look upstream to the supply chain, but to include downstream companies that could be users of the products and services we offer,” says Vigeant-Langlois. Questions focused on a different
+        set of challenges: manned/unmanned vehicle operations, preserving damaged structures, lead-time reductions using 3-D manufacturing, reducing cost and time to develop new vehicles, and using vertical flight to open new markets.</div>
+        <br>
+        <div>“In the first round, we had a half-dozen fully qualified submissions. In the second, we had 16,” says Vigeant-Langlois. “The number is not huge, but it's a balancing act between broadening the questions to reach a wide audience versus finding alignment
+        with topics addressing aerospace and focused on rotorcraft.”</div>
+        <br>
+        <div>The second-round winner is ExoLux Transportation, for a social-media platform offering connectivity in the urban VIP helicopter market. ExoLux coordinates a non-scheduled system of helicopter shuttles in south Florida. Rescale, a San Francisco-based company,
+        gets a special mention for a cloud simulation platform that can accelerate design cycles.</div>
+        <br>
+        <div>The third round will be launched at the Heli-Expo show this week, in Las Vegas, as Sikorsky continues to run spring and fall challenges. “We will keep the questions evolving. No set of five will be the same, so we can hit new markets,” says Hartman. The
+        company is also looking at using the challenge mechanism internally, to draw ideas from its employees.</div>
+        <br>
+        <div>Raytheon has been running an internal challenge for several years, asking employees to propose “disruptive” ideas that can be inserted into its technology roadmaps. “The Raytheon Innovation Challenge is not limited in scope,” says Mark Russell, vice president
+        for engineering, technology and mission assurance. “Each year we pose 5-6 challenges. We say here's a problem 10 years down the road, we're not looking for tomorrow's answer, but something innovative.”</div>
+        <br>
+        <div>While technologists can follow a career-long path to become one of Raytheon's 150 principal engineering fellows, the challenge deliberately casts a wider net and draws around 200 proposals each year. “More than two-thirds of responses are from people who
+        have been with Raytheon for less than 10 years,” he says.</div>
+        <br>
+        <div>One goal is to motivate engineers “to step out of their day job and tackle a problem they are not assigned to at the moment,” Russell says. Lockheed's internal challenge was structured similarly, to encourage employees “out of thinking about day-to-day
+        problems,” says Johnson, adding “Apart from the financial reward, people want to get noticed.”</div>
+        <br>
+        <div>“If we get a good solution, we fund it for a while, then eventually get customer contract R&amp;D to follow,” says Russell. The winner keeps ownership of the idea. “We do not hand it over to another group. That's the worst thing we can do. It would stifle
+        their passion.” Winning ideas have included using biometrics to monitor attention span at workstations to sense when operators are getting overloaded. “They are all based around our missions, such as analyzing data from UAVs,” he says.</div>
+        <br>
+        <div>To celebrate its 100th anniversary in 2012, Lockheed Martin set no small goals for its Innovate the Future challenge. “We looked for ideas critical to the world community; global issues such as health care, clean water, renewable energy and cybersecurity,”
+        says Johnson. The challenge “was the first of its kind on a global scale for the aerospace industry,” he believes.</div>
+        <br>
+        <div>“We posed one question: how do we enable a more secure future?” says Johnson. “Our focus is global security, but health care, water, and energy all affect security, directly or indirectly.” The response “proved this type of challenge is very powerful.”</div>
+        <br>
+        <div>The external competition was designed to help Lockheed engage with a new generation of innovators. “Sometimes it is hard for the aerospace and defense industry to connect to a diverse community,” says Johnson. “We are encouraged by the response—nearly
+        500 ideas, covering a wide range, from more than 130 countries.”</div>
+        <br>
+        <div>Three third prizes of $5,000 each went to ideas for early cancer detection, autonomic malware detection and avatar-assisted therapy. A second prize of $10,000 went to an idea to enhance solar cell efficiency using photonic design. And the grand prize of
+        $25,000 went to Moble Benedict of the University of Maryland for a vertical-axis micro wind turbine with dynamic blade pitching for use in urban environments.</div>
+        <br>
+        <div>The internal competition challenged Lockheed employees to take creativity and apply it to affordability, and generated 670 ideas, says Johnson. A goal was to encourage “horizontal integration” by sharing ideas across the company “in a way that they do
+        not do in their natural environment.”</div>
+        <br>
+        <div>Five winners shared $50,000 in prizes, the grand prize going to an idea from Lockheed's Aeronautics business for a way of capturing energy from wind at very low speed in urban and cluttered areas. “Our wind-energy business area is talking to the winner
+        about taking the idea forward,” he says.</div>
+        <br>
+        <div>All the winners also are receiving incubation support. “We learned from our innovation competition in India that when great concepts come in from very smart people, they may not have the business backing or experience to take the idea from creation to
+        application, so we work with them to give them professional advice.” Sikorsky provides incubation support in Stamford, Conn., but recognizes this is “geographically constraining” and other options may be offered at a later time.</div>
+        <br>
+        <div>How challenges are judged is important. For Raytheon, submissions are evaluated by a broad-based group of technical directors from across its businesses. “Selection is not run by one person at corporate. It is more of a peer review by a group of technologists,”
+        says Russell. For Lockheed, the impact of an idea and its creativity were major judging criteria.</div>
+        <br>
+        <div>Sikorsky uses two “fundamental, technology-agnostic criteria” to evaluate responses: how is the technology or business concept different, how will it create an improvement over the state of the art; and does the proposal provide a viable concept for the
+        market? “We look at how their experience and skills align with what they are proposing,” says Vigeant-Langlois. “We try very hard to be perceived as fair. We want them to consider coming back if they are not successful the first time.”</div>
+        <br>
+        <div>From Lockheed's perspective, the response to its global innovation challenge “shows there is an interested group that wants to participate,” Johnson says. “Even internally, ideas do not come forward easily. Here we had untapped ideas bought about because
+        of diversity.”</div>
+        <br>
+        <div class="gray-header">Published</div>
+        <div>Mar 04, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>By Graham Warwick</div>
+        <div>From Aviation Week &amp; Space Technology</div>
+        <div>http://www.aviationweek.com/Article.aspx?id=/article-xml/AW_03_04_2013_p66-552688.xml&amp;p=1</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a6-->
+<div data-role="page" id="a6">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Lockheed Martin Launches Innovation Contest
+    </div>
+    <div class="a-body">
+        <div>2012 is fast approaching, and with it comes big changes in the Federal IT industry. WashingtonExec is giving local executives the opportunity to share their thoughts on where they see the government contracting industry headed. Leaders of the industry
+        were asked a series of predictions questions focused on challenging issues such as cloud computing, healthcare IT, defense and so forth.</div>
+        <br>
+        <div>Lockheed Martin CTO Ray Johnson spoke with WashingtonExec about the &#8220;new reality&#8221; of government contracting. Johnson also compared past global security challenges to those faced by the U.S. defense community today.</div>
+        <br>
+        <div>Ray Johnson: &#8220;In 2012, we anticipate that all components of government will endure further resource constraints, and as such, they will look for continued cost reduction. While the coupling of increased global security demands with shrinking financial
+        resources is a challenge, industry must view this &#8216;New Reality&#8217; as an opportunity to apply innovation as well as cost cutting. Throughout our nation&#8217;s history, we have turned to innovation to solve our most difficult challenges. We must now use innovation
+        to develop affordable solutions to our global security challenges.</div>
+        <br>
+        <div>This coming year, the Lockheed Martin Corporation will celebrate a significant milestone in our history of providing innovative security solutions. The year 2012 marks 100 years since the founding of both the Glenn L. Martin Aircraft Company and the Alco
+        Hydro-Aeroplane Company, established by Allan and Malcolm Lockheed. Our Corporation&#8217;s namesake pioneers consistently rose to the challenge during times of financial austerity. In 1932, as the Dow reached the lowest point during the Great Depression, the Martin
+        B-10 became the first all-metal monoplane mass-produced by the United States Army Air Corps.</div>
+        <br>
+        <div>Today, the nature of global security has expanded to include cyber security, energy, healthcare, and climate change. As 2012 brings additional financial pressures, collaboration on global security solutions will become even more important. I anticipate
+        more partnership opportunities &#8211; collaboration between government, industry, and academia. As an industry, we will need to explore new business models that support these new markets. Concurrently, government must take measures to protect intellectual property
+        and create regulatory policies and tax structures that reward innovation.</div>
+        <br>
+        <div>During these challenging economic times and increasing security demands, the companies that meet these affordability challenges with innovative solutions will have a significant competitive advantage.&#8221;</div>
+        <br>
+        <div class="gray-header">Published</div>
+        <div>Dec 13, 2011</div>
+        <div class="gray-header">Source</div>
+        <div>By Brynn Koeppen</div>
+        <div>http://www.washingtonexec.com/2011/12/lockheed-cto-ray-johnson-2012-outlook-new-global-security-challenges-new-reality/</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a7-->
+<div data-role="page" id="a7">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Lockheed Martin Launches Innovation Contest
+    </div>
+    <div class="a-body">
+        <div>BETHESDA, Md., August 6, 2012 &#8211; Lockheed Martin Corporation [NYSE: LMT] today announced a worldwide innovation contest with cash awards totaling $50,000.</div>
+        <br>
+        <div>The &#8220;Innovate the Future&#8221; contest creates a global forum for interested participants to share their ideas on how innovation can enable a more secure future for the planet. Participants are invited to submit their thoughts on a range of topics facing the
+        world community, including the need for sustainable energy, cyber security, and healthcare.</div>
+        <br>
+        <div>&#8220;Lockheed Martin has 100-year legacy of discovery, innovation, and breakthroughs that have made lasting impacts on society, from human&#8217;s first attempts at flight, to systems for controlling the world&#8217;s air traffic, to our earliest exploration of space,&#8221;
+        said Dr. Ray O. Johnson, senior vice president and chief technology officer of Lockheed Martin.</div>
+        <br>
+        <div>&#8220;An important lesson from this legacy is that good ideas can come from anywhere. Through this contest, we are creating an online environment that helps people with diverse backgrounds and experiences share their ideas,&#8221; continued Johnson.</div>
+        <br>
+        <div>To enter the contest, participants must complete a brief submission online from August 6 to September 30, 2012. Up to five ideas will be selected for cash awards by a committee comprised of Lockheed Martin employees and at least one independent third party.</div>
+        <br>
+        <div>There will be up to one $25,000 grand prize, one $10,000 second place prize, and three $5,000 third place prizes. The grand prize winner will also receive an incubation contract with the Maryland Technology Enterprise Institute at the University of Maryland
+        to help validate and develop the idea.</div>
+        <br>
+        <div>Lockheed Martin is currently commemorating its Centennial anniversary and the company&#8217;s history of innovation. For more information, including stories of innovation, please visit: www.lockheedmartin.com/100years.</div>
+        <br>
+        <div>Headquartered in Bethesda, Md., Lockheed Martin is a global security and aerospace company that employs about 120,000 people worldwide and is principally engaged in the research, design, development, manufacture, integration and sustainment of advanced
+        technology systems, products and services. The corporation&#8217;s net sales for 2011 were $46.5 billion.</div>
+        <br>
+        <div class="gray-header">Published</div>
+        <div>Aug 6, 2012</div>
+        <div class="gray-header">Source</div>
+        <div>http://www.lockheedmartin.com/us/news/press-releases/2012/august/innovationcontest_080612.html</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a8-->
+<div data-role="page" id="a8">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Lockheed Martin Recognized for Minority Business Development Award
+    </div>
+    <div class="a-body">
+        <div>The Department of Commerce's Minority Business Development Agency (MBDA) has selected Lockheed Martin (NYSE: LMT) as the recipient of the 2013 Distinguished Supplier Diversity Award. The prestigious award is presented annually in recognition of corporations,
+        programs and individuals that have significantly advanced the growth and development of minority business enterprises.</div>
+        <br>
+        <div>&quot;Lockheed Martin strives to lead by example when it comes to opening doors to opportunity and entrepreneurship,&quot; said Dr. Ray O. Johnson, Lockheed Martin senior vice president and chief technology officer. &quot;Working with a diverse supplier base also supports
+        job growth and brings new perspectives and agility to Lockheed Martin products and services.&quot;</div>
+        <br>
+        <div>U.S. Secretary of Commerce Penny Pritzker and MBDA National Director David Hinson will host a private ceremony to present the award today at the U.S. Department of Commerce. The ceremony will begin at 11 a.m. and will conclude with lunch at 12:30 p.m.
+        in the Commerce Secretary's executive dining room.</div>
+        <br>
+        <div>Headquartered in Bethesda, Md., Lockheed Martin is a global security and aerospace company that employs about 116,000 people worldwide and is principally engaged in the research, design, development, manufacture, integration, and sustainment of advanced
+        technology systems, products, and services. The Corporation's net sales for 2012 were $47.2 billion.</div>
+        <br>
+        <div class="gray-header">Published</div>
+        <div>Dec 2, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>PR Newswire</div>
+        <div>http://www.diversitybestpractices.com/news-articles/lockheed-martin-recognized-minority-business-development-award</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a9-->
+<div data-role="page" id="a9">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Lockheed Martin University Collaboration Spotlighted On Capitol Hill
+    </div>
+    <div class="a-body">
+        <div>On August 1st, Dr. Ray O. Johnson, Lockheed Martin Corporation Senior VP and Chief Technology Officer testified before the U.S. House Subcommittee on Research and Science Education. Dr. Johnson is a prestigious spokesman for STEM education, K-12 through
+        advanced university degrees. On behalf of Lockheed Martin, Dr. Johnson is a recognized and respected advocate of the mission of ARCS Foundation, and engages with the organization at both the Chapter and National levels.</div>
+        <br>
+        <div>Lockheed Martin participated in a congressional hearing on August 1, 2012 before the U.S. House Subcommittee on Research and Science Education to discuss the company’s work with U.S. universities. Representing the company was Dr. Ray O. Johnson, Senior
+        Vice President and Chief Technology Officer.</div>
+        <br>
+        <div>The subcommittee held the hearing to gain perspective from business leaders on corporate partnerships with academia and the ways that the federal government can help drive innovation and job creation.</div>
+        <br>
+        <div>During his testimony, Dr. Johnson shared Lockheed Martin’s plans to invest around $20 million in university research and development in 2012. He discussed how the company is concentrating its efforts in fewer and larger partnerships across several strategic
+        areas, including cyber security, energy, healthcare, logistics and sustainment, and nanotechnology and advanced materials.</div>
+        <br>
+        <div>Dr. Johnson also discussed the need for the federal government to restore a permanent research and development tax credit to help spur corporate investments in U.S. universities. He also addressed the important roles of businesses and the government to
+        help students realize their potential through science, technology, engineering, and math education.</div>
+        <br>
+        <div>In addition, he stressed that Lockheed Martin works with universities on talent acquisition. The company is a large employer of entry-level talent with over 75 percent of the company’s required skill sets being technical in nature. The skills most in demand
+        are computer science, systems engineering, and electrical, computer, mechanical, and aerospace engineering.</div>
+        <br>
+        <div class="gray-header">Source</div>
+        <div>https://www.arcsfoundation.org/news/lockheed-martin-university-collaboration-spotlighted-capitol-hill</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a10-->
+<div data-role="page" id="a10">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        Miami and Lockheed Martin Launch Visionary Leadership Institute
+    </div>
+    <div class="a-body">
+        <div>An innovative approach to preparing tomorrow's leaders in engineering and computing has merited a significant founding investment from a world-leader in global security.</div>
+        <br>
+        <div>Miami University recently announced a visionary partnership between its School of Engineering and Applied Science (SEAS) and Lockheed Martin. The resulting Lockheed Martin Leadership Institute aspires to cultivate leaders who will flourish in their professions
+        and lives by thinking strategically, working collaboratively, effectively communicating their ideas and finding innovative solutions to society's most complex problems.</div>
+        <br>
+        <div>&quot;This is a transformational moment for the School of Engineering and Applied Science,&quot; said SEAS Dean Marek Dollár. &quot;Not only is this the largest gift to the School, it is the first institute of its kind funded by Lockheed Martin. Through the shared values
+        of our two institutions and our common vision for developing tomorrow's technical workforce, we are creating a national model for undergraduate engineering and computing education.&quot;</div>
+        <br>
+        <div>The vision of the Lockheed Martin Leadership Institute is to build a comprehensive and sustainable leadership program for engineering and computing students that includes a three-year intensive leadership certificate program for select student cohorts,
+        an emphasis on leadership awareness among all SEAS students and a focus on enhancing and developing faculty leadership.</div>
+        <br>
+        <div>Each year, an application and selection process will identify 15-20 second-year SEAS students for the certificate program. These students, from a variety of computing and engineering majors, will grow from a rigorous, cumulative curriculum led not only
+        by SEAS faculty but also by seasoned leaders from business and government. Each student will be guided during this intensely personal process by an individualized leadership development plan.</div>
+        <br>
+        <div>In keeping with the Institute's emphasis on real-world leadership experience, Louise Morman '75, former senior vice president of marketing and economic development for the New York Power Authority and a former systems analysis major at Miami, has been
+        named executive director. The first student cohort was admitted in January, and the second cohort was recently selected and begins the three-year program this August.</div>
+        <br>
+        <div>At the Institute's formal dedication last February, Ray O Johnson, senior vice president and chief technology officer at Lockheed Martin, spoke about the importance of fusing leadership with technical skills.</div>
+        <br>
+        <div>&quot;In order for science and technology to be central themes to the economic growth, development and strategy of the U.S. and other nations, we have to develop the ability to demonstrate our leadership not only in our technical fields but also in the field
+        of business,&quot; Johnson said. &quot;The global opportunities for leadership in these fields are unprecedented and offer tremendous opportunities for this cohort class and all the graduates who will follow.&quot;</div>
+        <br>
+        <div>Headquartered in Bethesda, Md., Lockheed Martin is a global security company that employs about 126,000 people worldwide and is principally engaged in the research, design, development, manufacture, integration and sustainment of advanced technology systems,
+        products and services. The Corporation's 2011 sales from continuing operations were $46.5 billion. Miami and Lockheed Martin Launch Visionary Leadership Institute.</div>
+        <br>
+        <div>&quot;That Lockheed Martin, a true American industry leader, has chosen to partner with Miami on such an important and groundbreaking institute is a glowing endorsement of our School of Engineering and Applied Science and an outstanding recognition of the exceptional
+        caliber of our students,&quot; said Miami President David Hodge. &quot;The Lockheed Martin Leadership Institute will provide an amazing high impact, experiential learning opportunity that produces science and technology leaders who are prepared for the challenges of
+        the 21st century.&quot;</div>
+        <br>
+        <div class="gray-header">Source</div>
+        <div>forloveandhonor.org</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--a11-->
+<div data-role="page" id="a11">
+    <a class="back arrow" href='#articles' data-transition="slide">
+        Back
+    </a>
+    <img class="gb-ct-img" src="img/RayJohnson.png" alt="image"/>
+    <div class="d-title">
+        New Washington 100 Inductee: Ray O. Johnson, Lockheed Martin SVP &amp; CTO
+    </div>
+    <div class="a-body">
+        <div>Executive Mosaic is happy to announce Ray O. Johnson, Lockheed Martin senior vice president and chief technology officer, as the newest inductee into the Washington 100, the premier group of leaders who drive innovation and growth at the intersection of
+        the public and private sectors.</div>
+        <br>
+        <div>The Air Force vet has served in his role at Lockheed since 2006, and guides the company&#8217;s technology vision and provides corporate leadership to more than 65,000 people working on more than 4,000 programs.</div>
+        <br>
+        <div>In 2011, ExecutiveBiz named Johnson one of the top 20 GovCon people to watch.</div>
+        <br>
+        <div>He penned an article for GovCon Exec in 2010 where he reinforced the importance of math and technology education for children.</div>
+        <br>
+        <div>&#8220;Our country, a world leader in just about every respect, ranks 48th in terms of STEM education,&#8221; Johnson said in the article. &#8221;Nearly half of all Americans cannot say how long it takes the Earth to circle the sun. Our education system is simply not graduating
+        enough engineers to keep the United States competitive.</div>
+        <br>
+        <div>&#8220;Ultimately, we think encouraging kids to study math and science is an easy sell. It is as simple as this &#8212; students need to know that engineers and scientists, like those in our corporation, create the future,&#8221; he said.</div>
+        <br>
+        <div>Before joining Lockheed, Johnson served as chief operating officer for Modern Technology Solutions and was an SVP and general manager at SAIC prior to that.</div>
+        <br>
+        <div>Johnson graduated from Oklahoma State University with a bachelor&#8217;s in electrical engineering and holds both a master&#8217;s degree and Ph.D. in electrical engineering from the Air Force Institute of Technology.</div>
+        <br>
+        <div>Executive Mosaic extends its congratulations to Ray O. Johnson and the rest of the Lockheed Martin organization.</div>
+        <div class="gray-header">Published</div>
+        <div>Jan 14, 2013</div>
+        <div class="gray-header">Source</div>
+        <div>Tim Watson</div>
+        <div>http://www.govconexec.com/2013/01/14/new-washington-100-inductee-ray-o-johnson-lockheed-martin-svp-cto/</div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Tweets -->
+<div data-role="page" id="videos">
+    <div class="page-title">
+        <span class="title" style="margin-left:13%">Tweets</span>
+        <a class="right" href='javascript:getTweets();'>
+            <img src="img/refresh.png" style="width:25px"/>
+        </a>
+    </div>
+    <div id="tweetList" class="list">
+        
+    </div>
+    <div id="loader" style="visibility:hidden">
+        <img src="css/images/ajax-loader.gif" style="display: block;margin-left: auto; margin-right: auto;">
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-transition="slide" class="bar-style">
+                        <img class="bag-icon" src="img/user.png"/>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#articles" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/star.png"/>
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos" data-transition="slide" class="bar-style">
+                      <img class="bag-icon" src="img/twitter.png"/>
+                        Tweets
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('[data-position=fixed]').fixedtoolbar({ tapToggle:false});
+    var totalEl = 0;
+
+    currentVideoId = "";
+    function playSelectedVideo(id){
+        currentVideoId = id;
+        var video = document.getElementById(id);
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    function stopCurrentVideo() {
+        var video = document.getElementById(currentVideoId);
+        video.pause();
+    }
+
+    function getTweets() {
+        $("#tweetList").html("");
+        $("#loader").css("visibility","visible");
+        var twitterAPI = "http://54.215.134.149:8080/data/getdata?type=SearchTweets&q='LockheedMartin'";
+        $.getJSON( twitterAPI, {
+            format: "json"
+        }).done(function( data ) {
+            var tweets = JSON.parse(data.Error);
+            for(var i = 0; i < tweets.statuses.length; i++) {
+
+                var pp = Date.parse(tweets.statuses[i].created_at);
+                var newDate = new Date(pp);
+
+                $('#tweetList').append(
+                        "<div class='tbg'>"
+                        + "<img class='t-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='t-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+
+                if(i == 0){
+                    $('#news').append(
+                        "<div style='display:block'>"
+                        + "<img class='tt-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='t-user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='tt-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='t-tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+                }else{
+                    $('#news').append(
+                        "<div style='display:none'>"
+                        + "<img class='tt-img' src='" + tweets.statuses[i].user.profile_image_url + "'/>"
+                        + "<div class='t-user'>" + tweets.statuses[i].user.name + "</div>"
+                        + "<div class='tt-date'>" + newDate.getDate() + " " + getMonthName(newDate.getMonth()) + "</div>"
+                        + "<div class='t-tweet'>" + tweets.statuses[i].text + "</div><div style='clear:both'></div>"
+                        +"</div>");
+                }
+            }
+
+            totalEl = tweets.statuses.length;
+            var currentEl = 0;
+            $("#loader").css("visibility","hidden");
+
+            // Bind tweets to the home page
+            var tid = setInterval(function() {
+                $('#news').children().eq(currentEl).slideUp( "slow", function() {
+                    if(currentEl < totalEl - 1)
+                        currentEl += 1;
+                    else
+                        currentEl = 0;
+
+                    $('#news').children().eq(currentEl).fadeIn("slow");
+                });
+            }, 5000);
+        });
+    }
+
+    getTweets();
+
+    function getMonthName(month){
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        for(var i=0; i< months.length; i++){
+            if(i == month){
+                return months[i];
+            }
+        }
+    }
+
+</script>
+
+</body>
 </html>
