@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.RayJohnson.ceo" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <preference name="orientation" value="portrait" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
