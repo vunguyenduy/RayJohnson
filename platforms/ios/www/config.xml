@@ -22,9 +22,9 @@
 
     <gap:splash src="img/splash/Splash-640x960.png" gap:platform="ios" width="640" height="960" />
     <gap:splash src="img/splash/Splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
-    <gap:splash src="img/splash/RayJohnson-splash-1024x748.png" gap:platform="ios" width="1024" height="748" />
-    <gap:splash src="img/splash/RayJohnson-splash-2048x1496.png" gap:platform="ios" width="2048" height="1496" />
-    <gap:splash src="img/splash/RayJohnson-splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" />
+    <gap:splash src="img/splash/RayJonhson-splash-1024x748.png" gap:platform="ios" width="1024" height="748" />
+    <gap:splash src="img/splash/RayJonhson-splash-2048x1496.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="img/splash/RayJonhson-splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" />
 
     <!-- For Android-->
     <icon src="img/icons/android/RayJohnson-icon-63.png" gap:platform="android" gap:density="ldpi" />
@@ -38,8 +38,8 @@
     <gap:splash src="img/splash/android/Splash-1080x1920.png" gap:platform="android" gap:density="xhdpi" />
 
     <!-- For BB-->
-    <icon src="img/icons/bb/SteveBolze-icon-68.png" gap:platform="blackberry" />
-    <icon src="img/icons/bb/SteveBolze-icon-68.png" gap:platform="blackberry" gap:state="hover"/>
+    <icon src="img/icons/bb/RayJohnson-icon-68.png" gap:platform="blackberry" />
+    <icon src="img/icons/bb/RayJohnson-icon-68.png" gap:platform="blackberry" gap:state="hover"/>
 
     <gap:splash src="img/splash/Splash-splash-640x960.png" gap:platform="blackberry" />
 
